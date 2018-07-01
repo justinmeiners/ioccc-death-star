@@ -2,21 +2,35 @@
 
 This is an obfuscated C, triangle renderer. It renders a scene from Star Wars and spits out a tga image.
 
+I had the idea to try obfuscated C after learning about [iocc](http://ioccc.org). If I remember correctly,
+my program is pretty close to the specifications, but I never finished or submitted it.
+
+My inspiration for triangle rendering came from the game [Another World](https://en.wikipedia.org/wiki/Another_World_(video_game))
+
 **Output**
+
 ![output](screenshots/out.png)
 
 I started by taking an image from the movie, and then drawing each triangle in photoshop. I kept track of the triangle coordinates and used those in my program.
 
 **Triangle Plan**
+
 ![plan](screenshots/plan.png)
 
 **Movie**
+
 ![movie](screenshots/movie.png)
+
 
 My obfuscation idea was centered around overloading all the symbols, using separate namespaces for structs, enums, etc.
 
-I had the idea after learning about [iocc](http://ioccc.org). If I remember correctly,
-my program is pretty close to the specifications, but I never finished or submitted it.
+For example:
+```
+enum hello { };
+int hello;
+```
+
+
 
 
 ## Project Licence
